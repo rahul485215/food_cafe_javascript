@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="icon" href="images/icon.png" type="images/x-icon">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!--Font Awesome Cdn Link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"  />
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--Header Section-->
+
+    <header class="header">
+
+        <div id="menu-btn" class="fas fa-bars"></div>
+
+        <a href="#" class="logo">c qube Café <i class="fa-solid fa-utensils"></i></a>
+
+        <nav class="navbar">
+            <a href="#">home</a>
+            <a href="#about">about</a>
+            <a href="#menu">menu</a>
+            <a href="#review">review</a>
+            <a href="#book">book</a>
+        </nav>
+
+        <a href="#book" class="btn">book a table</a>
+
+    </header>
+
+    <!--Home Section-->
+
+    <section class="home" id="#home">
+        <div class="row">
+            <div class="content">
+                <h3>A place to connect with food</h3>
+                <a href="#menu" class="btn">order now</a>
+            </div>
+
+            <div class="image">
+                <img src="images/home-img-1.png" class="main-home-image" alt="images">
+            </div>
+        </div>
+
+        <div class="image-slider">
+            <img src="images/home-img-1.png" alt="image">
+            <img src="images/home-img-2.png" alt="image">
+            <img src="images/home-img-3.png" alt="image">
+        </div>
+    </section>
+
+    <!--about section-->
+
+    <section class="about" id="about">
+
+        <h1 class="heading"> about us <span>why choose us</span></h1>
+
+        <div class="row">
+
+            <div class="image">
+            <img src="images/about-img.png"alt="images">
+            </div>
+            
+            <div class="content">
+                <h3 class="title">what's make our cafe special</h3>
+                <p>At The <b>c qube Café </b>, we believe in crafting more than just coffee; we create experiences. Nestled in the heart of downtown, our café is a sanctuary for those seeking a moment of respite from the bustling city life.
+                   </p>
+                    <button class="btn" onclick="showDetails()">read more</button>
+               
+                <div id="details">
+
+                    <p><b>Unique Atmosphere:</b> Step into our café, and you'll immediately feel the warmth of our welcoming ambiance. Soft jazz melodies float through the air, mingling with the rich aroma of freshly brewed coffee. </p>
+
+                    <p><b>Gourmet Delights:</b> Indulge your taste buds with our delectable selection of pastries, sandwiches, and desserts.</p>
+
+                    <p><b>Community Hub:</b> More than just a café, we are a gathering place for the community. Whether you're catching up with friends over brunch or immersing yourself in a good book</p>
+                </div>
+                <div class="icons-container">
+                    <div class="icons">
+                        <img src="images/about-icon-1.png" alt="image">
+                        <h3>quality incredients</h3>
+                    </div>
+                    <div class="icons">
+                        <img src="images/about-icon-2.png" alt="image">
+                        <h3>hygenic workspace</h3>
+                    </div>
+                    <div class="icons">
+                        <img src="images/about-icon-3.png" alt="image">
+                        <h3>free delivery</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--menu section-->
+    <section class="menu" id="menu">
+        <h1 class="heading">our menu <span>popular menu</span> </h1>
+
+        <div class="box-container">
+            <a href="#" class="box">
+                <img src="images/menu-1.png" alt="image">
+                <div class="content">
+                   <h3>french fries</h3> 
+                   <p></p>
+                   <span>&#8377; 120</span>
+                </div> 
+            </a>
+
+            <a href="#" class="box">
+                <img src="images/menu-2.png" alt="image">
+                <div class="content">
+                   <h3>italian chicken wings</h3> 
+                   <p></p>
+                   <span>&#8377; 310</span>
+                </div> 
+            </a>
+
+            <a href="#" class="box">
+                <img src="images/menu-3.png" alt="image">
+                <div class="content">
+                   <h3>mexican sausage pizza</h3> 
+                   <p></p>
+                   <span>&#8377; 290</span>
+                </div>
+            </a>
+
+            <a href="#" class="box">
+                <img src="images/menu-4.png" alt="image">
+                <div class="content">
+                   <h3>chicken sandwich burger</h3> 
+                   <p></p>
+                   <span>&#8377; 280</span>
+                </div>
+            </a>
+
+            <a href="#" class="box">
+                <img src="images/menu-5.png" alt="image">
+                <div class="content">
+                   <h3>chicken roll</h3> 
+                   <p></p>
+                   <span>&#8377; 180</span>
+                </div>
+            </a>
+
+            <a href="#" class="box">
+                <img src="images/menu-6.png" alt="image">
+                <div class="content">
+                   <h3>caramel brownie cake</h3> 
+                   <p></p>
+                   <span>&#8377; 150</span>
+                </div>
+            </a>
+        </div>
+        <div class="buttons">
+        <button class="btn" id="zom">order on zomato</button>
+        </div>
+    </section>
+
+    <!--review section-->
+
+    <section class="review" id="review">
+
+        <h1 class="heading">reviews <span>what people says</span></h1>
+
+        <div class="swiper review-slider">
+
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide box">
+                  <i class="fas fa-quote-left"></i>
+                  <i class="fas fa-quote-right"></i>
+                    <img src="images/pic-1.png" alt="image">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>the flavour of the pizza is very tasty and the preparation is very hygenic and must visit place.</p>
+                    <h3>john</h3>
+                    <span>satisfied client</span>
+                </div>
+                <div class="swiper-slide box">
+                  <i class="fas fa-quote-left"></i>
+                  <i class="fas fa-quote-right"></i>
+                    <img src="images/pic-2.png" alt="image">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>Amazing place. A cafe staffed by society's silent victims making some mouth watering culinary classics. </p>
+                    <h3>alexa</h3>
+                    <span>satisfied client</span>
+                </div>
+                <div class="swiper-slide box">
+                  <i class="fas fa-quote-left"></i>
+                  <i class="fas fa-quote-right"></i>
+                    <img src="images/pic-3.png" alt="image">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>We found this cafe from a google search and what an amazing find! We have eaten here 3 lunches in a row.</p>
+                    <h3>george</h3>
+                    <span>satisfied client</span>
+                </div>
+                <div class="swiper-slide box">
+                  <i class="fas fa-quote-left"></i>
+                  <i class="fas fa-quote-right"></i>
+                    <img src="images/pic-4.png" alt="image">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>The service is friendly. The cost is reasonably low. A must visit place when in Chennai.</p>
+                    <h3>mary</h3>
+                    <span>satisfied client</span>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <!--book section-->
+
+    <section class="book" id="book">
+
+        <h1 class="heading">bookings <span>reserve a table</span></h1>
+
+        <form name="submit-to-google-sheet">
+
+            <input type="text" name="Name" placeholder="your name" class="box" required>
+            <input type="email" name="Email" placeholder="your email" class="box" required>
+            <input type="number" name="Number" placeholder="your number" class="box" required>
+
+            <textarea name="Text"placeholder="your message" class="box" id="" cols="30" rows="10" required></textarea>
+
+            <button type="submit" class="btn">send message</button>
+        </form>
+        <span id="msg"></span>
+    </section>
+
+    <!--footer-->
+
+    <section class="footer">
+
+        <div class="box-container">
+
+            <div class="box">
+                <h3>our branches</h3>
+                <a href="#"><i class="fas fa-arrow-right"></i> chennai </a>
+                <a href="#"><i class="fas fa-arrow-right"></i> coimbatore </a>
+                <a href="#"><i class="fas fa-arrow-right"></i> salem </a>
+                <a href="#"><i class="fas fa-arrow-right"></i> trichy </a>
+                <a href="#"><i class="fas fa-arrow-right"></i> madurai </a>
+            </div>
+
+            <div class="box">
+                <h3>over to top</h3>
+                <a href="#"><i class="fas fa-arrow-right"></i> home </a>
+                <a href="#about"><i class="fas fa-arrow-right"></i> about </a>
+                <a href="#menu"><i class="fas fa-arrow-right"></i> menu </a>
+                <a href="#review"><i class="fas fa-arrow-right"></i> review </a>
+                <a href="#book"><i class="fas fa-arrow-right"></i> book </a>
+            </div>
+
+            <div class="box">
+                <h3>contact info</h3>
+                <a href="#"><i class="fa-solid fa-tty"></i>+91-1234 5678 21</a>
+                <a href="#"><i class="fas fa-phone"></i>+91 926-521-2204 </a>
+                <a href="#"><i class="fas fa-envelope"></i>qubecafe@gmail.com</a>
+                <a href="#"><i class="fas fa-envelope"></i>thousands light, chennai 600078 </a>
+            </div>
+
+            <div class="box">
+                <h3>social media</h3>
+                <a href="#"><i class="fab fa-facebook-f"></i>facebook</a>
+                <a href="#"><i class="fab fa-twitter"></i>twitter</a>
+                <a href="#"><i class="fab fa-instagram"></i>instagram</a>
+                </div>
+        </div>
+        <h1 class="heading">visit again <span>have a nice day</span></h1>
+    </section>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="script.js"></script>
+</body>
+</html>
